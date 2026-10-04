@@ -1,34 +1,24 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "cooldownedvaults",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Cooldowned Vaults",
+	"description": "A mod makes vaults reusable by adding cooldowns for every player individually.",
 	"authors": [
-		"Me!"
+		"Lootdust"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/cooldownedvaults/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.client.ExampleModClient"
+			"com.lootdust.cooldownedvaults.CooldownedVaults"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"cooldownedvaults.mixins.json"
 	],
+	"accessWidener": "cooldownedvaults.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.19.5",
 		"minecraft": "~26.3",
